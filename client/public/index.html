@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <title>Weather Now</title>
+</head>
+
+<body>
+  <div class="home text-center p-5 m-5">
+    <h1 class="pb-3">Welcome to the Instant Weather</h1>
+    <div class="m-3 form">
+    <div class="mb-3">
+      <label for="City" class="form-label"></label>
+      <input type="text" class="form-control text-center city" id="exampleFormControlTextarea1" placeholder="City">
+    </div>
+    <div class="p-3">
+      <label for="state" class="form-label "></label>
+      <input type="text" class="form-control text-center state" id="exampleFormControlInput1" placeholder="state abbreviation">
+    </div>
+    <button type="button" class="search btn btn-success">Go</button>
+  </div>
+   
+    <div>
+      <img class="img-fluid img-thumbnail" src="images/weather.jpg" alt="collage of different weather conditions" />
+    </div>
+    <div class="pt-5">
+      <a href="/temp"><button type="button" class=" result btn btn-primary">Temperture</button></a>
+      <a href="/conditions"><button type="button" class=" result btn btn-warning">Conditions</button></a>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
